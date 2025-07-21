@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="cursor-glow"></div>
+
+  <main id="page_body">
+    <section class="grid grid-cols-1 md:grid-cols-2 h-screen" id="top_section">
+
+      <!-- LEFT SECTION -->
+      <div id="left_section_on_large_screen" class="flex flex-col justify-between p-20 col-start-1">
+        <div>
+          <h1 id="my_name">Timothy Mphande</h1>
+          <h2 id="title">Software Engineer</h2>
+          <p id="desc">
+            Building high-quality software that blends performance, innovation, and seamless user experience.
+          </p>
+
+          <nav id="tabs">
+            <div class="tab active">ABOUT</div>
+            <div class="tab">EXPERIENCE</div>
+            <div class="tab">PROJECTS</div>
+          </nav>
+        </div>
+
+        <div id="socials">
+          <a href="https://github.com/reversee04"><img src="assets/github.png" alt="github"></a>
+          <a href="https://www.linkedin.com/in/timothy-mphande-b269952a7/"><img src="assets/linkedin.png" alt="linkedin"></a>
+          <a href="https://www.instagram.com/re_verse403?igsh=bmpuMHFoZGVmOXoy"><img src="assets/instagram.png" alt="instagram"></a>
+        </div>
+      </div>
+
+      <!-- RIGHT SECTION -->
+      <div id="right_section_on_large_screen" class="col-start-2 h-screen overflow-y-scroll">
+        <p>
+          <!-- Content for the right section -->
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <script>
+    const glow = document.querySelector('.cursor-glow');
+    document.addEventListener('mousemove', e => {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top = e.clientY + 'px';
+    });
+
+    // Handle active tab switching
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
