@@ -123,3 +123,97 @@ body {
   height: 46rem;
   overflow-y: scroll;
 }
+
+#right_section_on_large_screen .about-text,
+#right_section_on_large_screen .about-text span {
+  color: #c5d1ec;
+}
+
+#right_section_on_large_screen .about-text span.font-semibold {
+  color: #fff;
+  font-weight: 600;
+}
+
+#right_section_on_large_screen .about-text {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  line-height: 1.75;
+  font-size: 1.125rem;
+}
+
+#right_section_on_large_screen .about-text p {
+  margin-bottom: 1.5rem;
+}
+
+#right_section_on_large_screen .timeline-section {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#right_section_on_large_screen .timeline-card {
+  display: block;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  box-shadow: 0 4px 24px 0 rgba(8, 145, 178, 0.08);
+  transition: box-shadow 0.3s, filter 0.3s;
+  text-decoration: none;
+}
+
+#right_section_on_large_screen .timeline-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(34,211,238,0.15), 0 4px 24px 0 rgba(8, 145, 178, 0.08);
+  filter: brightness(1.05);
+}
+
+#right_section_on_large_screen .timeline-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  #right_section_on_large_screen .timeline-header {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+#right_section_on_large_screen .timeline-period {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+#right_section_on_large_screen .timeline-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+#right_section_on_large_screen .timeline-desc {
+  margin-top: 0.5rem;
+  color: #94a3b8;
+}
+
+#right_section_on_large_screen .timeline-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+#right_section_on_large_screen .timeline-skill {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  background: #334155;
+  color: #e0e7ef;
+  border-radius: 9999px;
+}
