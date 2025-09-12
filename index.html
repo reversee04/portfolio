@@ -23,9 +23,9 @@
           </p>
 
           <nav id="tabs">
-            <div class="tab active">ABOUT</div>
-            <div class="tab">EXPERIENCE</div>
-            <div class="tab">PROJECTS</div>
+            <div class="tab active" data-target="about-section">ABOUT</div>
+            <div class="tab" data-target="techstack-section">TECH STACK</div>
+            <div class="tab" data-target="projects-section">PROJECTS</div>
           </nav>
         </div>
 
@@ -38,7 +38,8 @@
 
       <!-- RIGHT SECTION -->
       <div id="right_section_on_large_screen">
-        <div class="max-w-3xl mx-auto p-6 text-gray-200 leading-relaxed space-y-6">
+        <!-- ABOUT SECTION -->
+        <div id="about-section" class="max-w-3xl mx-auto p-6 text-gray-200 leading-relaxed space-y-6">
           <p class="text-lg">
             I’m a developer passionate about building intelligent, accessible, and
             user-friendly systems that solve real-world problems. My expertise lies
@@ -93,32 +94,85 @@
             I’m not coding, I enjoy reading, mentoring, and engaging in community
             activities that spark innovation and growth.
           </p>
+        </div>
 
-          <div class="mt-6">
-            <h3 class="text-white font-semibold mb-3 text-lg">Tech Stack</h3>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">Node.js</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">Express.js</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">Python</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">Django</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">Flask</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">React.js</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">MongoDB</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">React Native</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">Docker</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">PHP</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">HTML</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">CSS</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">MySQL</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">C</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">C++</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">GitHub</span>
-              <span class="px-3 py-1 text-sm bg-slate-700 text-gray-200 rounded-full">OpenGL</span>
+        <!-- TECH STACK SECTION -->
+        <div id="techstack-section" class="max-w-3xl mx-auto p-6 text-gray-200 leading-relaxed space-y-6" style="display:none;">
+          <h3 class="text-white font-semibold mb-3 text-lg">Tech Stack</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/nodejs.png" alt="Node.js" class="w-6 h-6" />
+              <span class="text-sm">Node.js</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/express.png" alt="Express.js" class="w-6 h-6" />
+              <span class="text-sm">Express.js</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+              <span class="text-sm">Python</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/django.png" alt="Django" class="w-6 h-6" />
+              <span class="text-sm">Django</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/flask.png" alt="Flask" class="w-6 h-6" />
+              <span class="text-sm">Flask</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/react.png" alt="React.js" class="w-6 h-6" />
+              <span class="text-sm">React.js</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/mongodb.png" alt="MongoDB" class="w-6 h-6" />
+              <span class="text-sm">MongoDB</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/react-native.png" alt="React Native" class="w-6 h-6" />
+              <span class="text-sm">React Native</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/docker.png" alt="Docker" class="w-6 h-6" />
+              <span class="text-sm">Docker</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+              <span class="text-sm">PHP</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/html.png" alt="HTML" class="w-6 h-6" />
+              <span class="text-sm">HTML</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/css.png" alt="CSS" class="w-6 h-6" />
+              <span class="text-sm">CSS</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/mysql.png" alt="MySQL" class="w-6 h-6" />
+              <span class="text-sm">MySQL</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/c.png" alt="C" class="w-6 h-6" />
+              <span class="text-sm">C</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/cpp.png" alt="C++" class="w-6 h-6" />
+              <span class="text-sm">C++</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/github.png" alt="GitHub" class="w-6 h-6" />
+              <span class="text-sm">GitHub</span>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-700 rounded-lg px-3 py-2">
+              <img src="assets/opengl.png" alt="OpenGL" class="w-6 h-6" />
+              <span class="text-sm">OpenGL</span>
             </div>
           </div>
         </div>
 
-        <div class="timeline-section">
+        <!-- PROJECTS SECTION -->
+        <div id="projects-section" class="timeline-section" style="display:none;">
           <a href="https://www.klaviyo.com/" target="_blank" rel="noopener noreferrer" class="timeline-card">
             <div class="timeline-header">
               <span class="timeline-period">2024 — PRESENT</span>
@@ -196,12 +250,25 @@
       glow.style.top = e.clientY + 'px';
     });
 
-    // Handle active tab switching
+    // Tab navigation logic
     const tabs = document.querySelectorAll('.tab');
+    const sections = {
+      'about-section': document.getElementById('about-section'),
+      'techstack-section': document.getElementById('techstack-section'),
+      'projects-section': document.getElementById('projects-section')
+    };
+
     tabs.forEach(tab => {
       tab.addEventListener('click', () => {
         tabs.forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
+        Object.keys(sections).forEach(key => {
+          sections[key].style.display = 'none';
+        });
+        const target = tab.getAttribute('data-target');
+        if (sections[target]) {
+          sections[target].style.display = '';
+        }
       });
     });
   </script>
